@@ -13,6 +13,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .jobListingCardsContainer {
+    width: 100%;
+  }
+  .jobInformationContainer {
+    width: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .jobListingCardsContainer {
+    width: 40%;
+  }
+  .jobInformationContainer {
+    width: 70%;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +53,386 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media print {
+  *,*::before,*::after {
+      text-shadow: none!important;
+      box-shadow: none!important
+  }
+}
+
+body {
+  font-family: open sans,helvetica,arial,sans-serif;
+}
+
+body {
+  background: #f3f2ef;
+  font-family: open sans,helvetica,arial,sans-serif;
+  color: #3a3a3a;
+  overflow-y: scroll;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: .85rem;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: .9;
+  font-family: open sans,helvetica,arial,sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+img {
+  display: block;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  vertical-align: top;
+  background-repeat: no-repeat;
+}
+
+.panels {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+div {
+  display: block;
+}
+
+.jobListingCardsContainer {
+  flex-shrink: 0;
+  padding-top: 5px;
+}
+
+.jobListingCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.jobListingCard {
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+  border-radius: 8px;
+  container-type: inline-size;
+  padding-bottom: 40px;
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.jobListingCardTopInformation {
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  min-height: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.topPortion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.biggerTopPortion {
+  flex-wrap: nowrap !important;
+}
+
+.avatarContainer {
+  width: max-content;
+  height: max-content;
+  margin: 0 10px 0 0;
+}
+
+.companyAvatar {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+}
+
+.specialisationContainer {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.biggerSpecialisationContainer {
+  order: 3;
+}
+
+.specialisationTag {
+  color: #1fc76a;
+  width: max-content;
+  padding: 5px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #DDF7E9;
+}
+
+.biggerInformationContainer {
+  flex-basis: auto !important;
+  margin-top: 0 !important;
+}
+
+.informationContainer {
+  flex-basis: 100%;
+  margin-top: 5px;
+  flex-shrink: 1;
+}
+
+.companynameAndRating {
+  white-space: pre-wrap;
+}
+
+.jobListingCardTitle {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: initial;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+}
+
+.jobListingCardTitle {
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0px;
+  text-overflow: ellipsis;
+}
+
+.jobListingCardDetailsContainer {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.biggerJobListingCardDetailsContainer {
+  padding-left: 55px;
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}
+
+.recencyInformationAndCountry {
+  color: #838383;
+  margin: 0 0 6px 0;
+  white-space: pre-wrap;
+}
+
+.recentPosting {
+  color: #1fc76a;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.country {
+  display: inline-block;
+}
+
+svg:not(:root).svg-inline--fa, 
+svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+
+.jobListingCard p {
+  margin-bottom: 2px;
+}
+
+.jobListingCardSalary {
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.jobListingCardSalary  .salary {
+  padding-top: 3px;
+  padding-right: 5px;
+}
+
+.jobListingCardSalary .estimatedSalaryTag {
+  padding: 3px 7px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.jobListingCardTopInformation::after {
+  content: " ";
+  display: block;
+  margin-top: 10px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: -15px;
+}
+
+.jobListingCardBottomInformation {
+  width: 100%;
+  bottom: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  position: absolute;
+  min-height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.techStackContainer {
+  color: #838383;
+  display: inline-block;
+  padding: 5px 8px;
+  overflow: hidden;
+  max-width: 90%;
+  font-family: "Roboto Mono", "Consolas", monospace;
+  font-weight: bold;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  background-color: #f1f1f1;
+  margin-right: 5px;
+}
+
+.jobInformationContainer {
+  display: flex;
+  padding: 10px 5px;
+  position: sticky;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.scrollableContainer {
+  padding: 0 5px 50px 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.removeTopMargin {
+  margin-top: 0 !important;
+}
+
+.card {
+  margin: 10px 0 0 0;
+  padding: 385px 445px;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  background-color: #ffffff;
+}
+
+.topPortion {
+  display: flex;
+  align-items: flex-start;
+}
+
+.largeText {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-bottom: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
 }
