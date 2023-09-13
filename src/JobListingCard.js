@@ -5,24 +5,23 @@ function JobListingCard() {
 
     const jobListings = [
         { id: 1, title: 'Senior Software Engineering Manager - Digital Business Services', company: "HSBC", 
-        specialisation: "Manager", rating: 3.8, img: "https://nodeflair.com/companies/1554.png",
+        specialisation: "Manager", rating: 3.8, img: "logo1554.png",
         country: "Singapore", posting: [30, "minutes"],
         techStack: ["Strategy", "Jenkins", "API", "CI", "Git", "Java", "Angular", "JavaScript", "React"],
         salary: ["S$", "8,500", "10,000"]},
         { id: 2, title: 'iOS Engineer - Intelligent Video Creation', company: "Tiktok",
-        specialisation: "iOS", rating: 3.6, img: "https://nodeflair.com/companies/240.png",
+        specialisation: "iOS", rating: 3.6, img: "logo240.png",
         country: "Singapore", posting: [4, "hours"],
         techStack: ["Objective C", "iOS", "Swift"],
         salary: []},
         { id: 3, title: 'DevOps Architect', company: "NCS", 
-        specialisation: "DevOps", rating: 3.7, img: "https://nodeflair.com/companies/278.png",
+        specialisation: "DevOps", rating: 3.7, img: "logo278.png",
         country: "Singapore", posting: [1, "day"],
         techStack: ["Strategy", "GitLab", "Jenkins", "Shell Scirpt"],
         salary: ["S$", "8,500", "10,000"]},
     ];
 
     const handleCardClick = (card) => {
-        console.log(card.id)
         setSelectedCard(card);
     };
     return (
@@ -37,7 +36,7 @@ function JobListingCard() {
                         <div className="jobListingCardTopInformation">
                             <div className="topPortion biggerTopPortion">
                                 <div className="avatarContainer">
-                                    <img className="companyAvatar" src={jobListing.img} alt="HSBC logo"/>
+                                    <img className="companyAvatar" src={jobListing.img} alt="logo"/>
                                 </div>
                                 <div className="specialisationContainer biggerSpecialisationContainer">
                                     <div className="specialisationTag">{jobListing.specialisation}</div>
